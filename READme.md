@@ -50,7 +50,7 @@ Here is the list of the arguments of the config.yaml file with a brief explanati
 ### Dataset and Loader
 | arg | type |help | modify |
 |-----|------|-----|--------|
-|stores_list| str |stores on which to train our model (not used, should be fixed)| **yes**|
+|stores_list| str="all" or List(str) |stores on which to train our model. The names in the list should match the identifiers of the stores. the key "all" enable training on all the stores in the dataset| **yes**|
 |split_date| str, format="YYYY-MM-DD" |date on which split datasets in train (< split_date ) and test (> split_date)| **yes**|
 |history_length| int | length of the moving window, this is how many values we feed in the network| **yes**|
 |pred_length| int | length of the predictions, this is how many values we obtain from the network| **yes**|
