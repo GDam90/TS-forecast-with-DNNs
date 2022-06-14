@@ -18,6 +18,7 @@ It automatically create some folders for the experiment where it:
 * first, third, forth and fifth bullets are computed for each store (in an appropriate folder)
 
 The folder structure it will create is depicted below:
+
 ![folders](images/folder_structure.PNG)
 
 ## Environment
