@@ -1,0 +1,51 @@
+# Constants
+experiment_name: provaLaura
+
+# Paths
+path_to_stores: /home/zeus/guide/wp3/data/stores
+path_to_checkpoints: /home/zeus/guide/wp3/checkpoints/{}
+path_to_experiment: /home/zeus/guide/wp3/checkpoints/{}
+
+# Dataset and Dataloader
+stores_list: ["ABLA", "AAIG", "AAIF", "ABLD"]
+split_date: 2022-2-1
+history_length: 25
+pred_length: 5
+normalization_strategy: minmax # minmax standard
+batchsize: 32
+univariate: True
+target_name: n_events
+
+# Model
+model_type: transformer # lstm, dense, tcn, transformers
+dropout: 0.1
+activation: relu
+batch_first: True
+# lstm
+hidden_size: 32
+num_layers: 1
+input_size: 1
+# dense
+hiddens: [32, 32]
+# TCN
+num_channels: [4, 16, 32, 16]
+kernel_size: 2
+# transformer
+d_model: 8
+n_head: 2
+num_encoder_layers: 2
+num_decoder_layers: 2
+dim_feedforward: 32
+
+lr: 0.001
+
+# Optimizer
+optim: adam # adam, SGD
+
+# Train
+epochs: 200
+log_interval: 10
+eval_interval: 20
+plot_interval: 50
+criterion: mse
+device: cpu #cpu, gpu (gpu:0)
