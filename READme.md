@@ -121,8 +121,3 @@ Here is the list of the arguments of the config.yaml file with a brief explanati
 |log_interval| int | number of training epochs on which we want the training loss to be logged| **yes**|
 |eval_interval| int |number of training epochs on which we want the evaluation metrics to be logged. During this operation it will choose wether to save the model (early stopping)| **yes**|
 |log_interval| int |number of training epochs on which we want the plots of the comparison| **yes**|
-
-## TODO
-- [x] Retrieve a pretrained model
-- [x] Evaluation function
-- [x] Fill the table w Ram script
