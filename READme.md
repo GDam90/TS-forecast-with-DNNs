@@ -25,14 +25,17 @@ The folder structure it will create is depicted below:
 
 You'll just need the following packages in your environment:
 
-- pandas
-- numpy
-- yaml
-- argparse
-- datetime
-- torch
-- matplotlib
-- openpyxl
+| Package | Version |
+|---------|---------|
+| pandas | 1.3.2 |
+| numpy | 1.21.2 |
+| yaml | 0.2.5 |
+| argparse | -- |
+| datetime | -- |
+| torch | 1.8.0 |
+| matplotlib | 3.4.2 |
+| openpyxl | 3.0.9 |
+| scikit-learn | 0.23.2 |
 
 At the present moment it just run on CPU, but it doesn't take much time to run (6/7 minutes on 1000 epochs for LSTM and Dense model on a single store).
 
